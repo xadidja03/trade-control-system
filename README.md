@@ -7,15 +7,13 @@
 
 **Description:**
 Welcome to the Trade Control System with security README. This document provides an overview of the Commerce control application, its features, installation instructions, and usage guidelines.
-This project encompasses a Spring Boot application designed to manage product, category, and supplier-related operations in a PostgreSQL database. 
-The application provides a comprehensive set of features to facilitate effective management of various aspects of your business:
+This project encompasses a Spring Boot application with jwt security designed to manage product, category, and supplier-related operations in a PostgreSQL database. 
 
 **Key Features:**
 - Product: Empowers users to control every aspect of their products. Easily list, update, and delete products, aiding businesses in organizing inventory.
 - Category: Users can add, modify, and delete product categories. Each product can belong to one or multiple categories, simplifying filtering and searching.
 - Supplier: Organize supplier relationships. Add, update, or remove suppliers as needed. Associate products with suppliers for quick access to supplier details.
 - Data Integrity and Validation: Ensures data integrity with custom validation rules. Prevents errors, like negative prices, and enforces category-specific rules, enhancing data quality.
-- Database Relationship Management: Effectively manages relationships between database objects. Easily specify product-category or product-supplier associations for improved data organization.
 
 **User Authentication and Security:**
 - User Sign-up: Users can register and create an account using the `/register` endpoint. After registration, an email confirmation link is sent to the user's email address.
@@ -36,28 +34,38 @@ The application provides a comprehensive set of features to facilitate effective
 - Lombok
 - Validation
 - JUnit5
-- Swagger
+- Postman
 
  **Endpoints and description**
-![category controller](https://github.com/xadidja03/express-bank/assets/116426512/8352fcea-ab4b-4845-9cb6-5b289aad8288)
-
 - POST /commerce/categories/registration
-- GET /commerce/categories/showing
-- Description: 1st endpoint allows you to create a new category. 2nd endpoint allows you to retrieve a list of all available categories. 
+  ![registercategory](https://github.com/xadidja03/trade-control-system-security/assets/116426512/a8ed0cda-308f-4f4b-86c7-b78bb3a478f8)
 
-![supplier controller](https://github.com/xadidja03/express-bank/assets/116426512/155e780f-0bbe-440a-8cd2-01443e85f400)
+- GET /commerce/categories/showing
+  ![showcategory](https://github.com/xadidja03/trade-control-system-security/assets/116426512/fb0a1dd0-29f9-40c8-92a0-78e5ef5ae533)
 
 - POST /commerce/suppliers/registration
+  ![registersupplier](https://github.com/xadidja03/trade-control-system-security/assets/116426512/19189287-5ac2-498c-bd2b-ba13fd0ddfb1)
+
 - GET /commerce/suppliers/showing
-- Description: 1st endpoint allows you to create a new suppliers. 2nd endpoint allows you to retrieve a list of all available suppliers.
+  ![showsupplier](https://github.com/xadidja03/trade-control-system-security/assets/116426512/30fb6b30-7949-40b5-a35f-c31276386714)
 
-![product-controller](https://github.com/xadidja03/express-bank/assets/116426512/546214c8-1698-49be-b3b2-137cc2e61e96)
 
-- POST /commerce/products/registration <br>**allows you to create a new products.**
-- GET /commerce/products/showing       <br>**allows you to retrieve a list of all available products.**
-- PUT/commerce/products/{id}           <br>**allows you to update an existing product by specifying its ID in the URL.**
-- DELETE/commerce/products/{id}        <br>**allows you to delete a product by specifying its ID in the URL.**
-- GET/commerce/products/{id}           <br>**allows you to retrieve details about a specific product by specifying its ID in the URL.**
+- POST /commerce/products/registration
+  ![productregister](https://github.com/xadidja03/trade-control-system-security/assets/116426512/e495d38e-cc74-4b7e-bd2c-ef4af5c0c40b)
+  ![productregister2](https://github.com/xadidja03/trade-control-system-security/assets/116426512/795eb969-7576-4266-9155-f20a85dcad9d)
+
+
+- PUT/commerce/products/{id}
+  ![productsupdate](https://github.com/xadidja03/trade-control-system-security/assets/116426512/68d68e20-6b68-4d9a-9e30-0a11365ed625)
+
+- DELETE/commerce/products/{id}
+  ![delete](https://github.com/xadidja03/trade-control-system-security/assets/116426512/a18be56c-81b9-4dca-b857-d790790f86fd)
+
+- GET/commerce/products/{id}
+  ![findbyid](https://github.com/xadidja03/trade-control-system-security/assets/116426512/e6c9e7bf-aa3b-48e9-9f0b-e630d2d18f6b)
+  
+- GET /commerce/products/showing
+![image](https://github.com/xadidja03/trade-control-system-security/assets/116426512/be6bccae-c53d-4cdf-8a39-402a3f503c17)
 
 ### Register user
 POST http://localhost:8088/commerce/user/registration
