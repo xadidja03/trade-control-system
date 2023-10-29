@@ -17,11 +17,21 @@ The application provides a comprehensive set of features to facilitate effective
 - Data Integrity and Validation: Ensures data integrity with custom validation rules. Prevents errors, like negative prices, and enforces category-specific rules, enhancing data quality.
 - Database Relationship Management: Effectively manages relationships between database objects. Easily specify product-category or product-supplier associations for improved data organization.
 
+**User Authentication and Security:**
+- User Sign-up: Users can register and create an account using the `/register` endpoint. After registration, an email confirmation link is sent to the user's email address.
+- Email Confirmation: Users must click the confirmation link in the email to verify their email address and activate their account.
+- User Login: Registered users can log in using the `/login` endpoint, which provides them with a JWT token for authentication.
+- JWT Token: JSON Web Tokens are used for secure authentication and authorization. The token is provided upon login and must be included in the headers of authenticated requests.
+- Token Refresh: To maintain security and session longevity, users can use the `/refresh` endpoint to get a new access token without re-entering credentials.
+
 **Technologies Used:**
 - IDE - Intellij Idea;
 - JDK - 1.8 or later;
 - Spring Web - 2.7;
 - Spring Data Jpa;
+- Spring Security
+- Jwt
+- Java Mail Sender
 - PostgreSql
 - Lombok
 - Validation
@@ -49,6 +59,26 @@ The application provides a comprehensive set of features to facilitate effective
 - DELETE/commerce/products/{id}        <br>**allows you to delete a product by specifying its ID in the URL.**
 - GET/commerce/products/{id}           <br>**allows you to retrieve details about a specific product by specifying its ID in the URL.**
 
+### Register user
+POST http://localhost:8088/commerce/user/registration
+![register](https://github.com/xadidja03/trade-control-system-security/assets/116426512/0209dc65-b601-4317-90b7-1920ecea0534)
+
+### Login user
+POST http://localhost:8088/commerce/user/login
+![login](https://github.com/xadidja03/trade-control-system-security/assets/116426512/eb1a43eb-43cb-4cfc-9d6c-f643e5409b4c)
+### Confirm account with mail
+![mail](https://github.com/xadidja03/trade-control-system-security/assets/116426512/74c8206d-bc7b-4ddc-b323-1a18dd4e1a9f)
+
+![mailconfirm](https://github.com/xadidja03/trade-control-system-security/assets/116426512/6aa28fec-c381-46c0-8b8d-968dc458102c)
+
+### Refresh token
+GET http://localhost:8088/commerce/user/refreshing-token
+![refrestoken](https://github.com/xadidja03/trade-control-system-security/assets/116426512/7a2ef10c-6492-4180-adaf-ee175272956e)
+
+### Database postgres
+
+![datagrip](https://github.com/xadidja03/trade-control-system-security/assets/116426512/096f8337-2277-464f-be4e-5e6c15836f7a)
+![db](https://github.com/xadidja03/trade-control-system-security/assets/116426512/543a6541-b8b6-4d8b-bda7-a15f635fc0da)
 
 # **The run of the building jar file**
 ![jar build](https://github.com/xadidja03/express-bank/assets/116426512/d9220b7d-131e-42a6-820a-9a6b9b3c371b)
