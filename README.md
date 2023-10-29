@@ -78,7 +78,6 @@ GET http://localhost:8088/commerce/user/refreshing-token
 ### Database postgres
 
 ![datagrip](https://github.com/xadidja03/trade-control-system-security/assets/116426512/096f8337-2277-464f-be4e-5e6c15836f7a)
-![db](https://github.com/xadidja03/trade-control-system-security/assets/116426512/543a6541-b8b6-4d8b-bda7-a15f635fc0da)
 
 # **The run of the building jar file**
 ![jar build](https://github.com/xadidja03/express-bank/assets/116426512/d9220b7d-131e-42a6-820a-9a6b9b3c371b)
