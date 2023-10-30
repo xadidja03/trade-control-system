@@ -1,7 +1,7 @@
 # Commerce Control System
 **Welcome to the my application✨**
 
-![structure](https://github.com/xadidja03/trade-control-system/assets/116426512/a1fdee58-742e-4659-9328-68b5cd87cfb6)
+![structure](https://github.com/xadidja03/trade-control-system/assets/116426512/9e60147c-4f43-4c90-aa38-8adc42841b28)
 
 
 **Description:**
@@ -29,19 +29,20 @@ The application provides a comprehensive set of features to facilitate effective
 
  **Endpoints and description**
  
-![category controller](https://github.com/xadidja03/trade-control-system/assets/116426512/e6a30609-16b5-4bdc-acf8-ecaa40f0a5b6)
+![category controller](https://github.com/xadidja03/trade-control-system/assets/116426512/f0b32e2a-3a2f-42f0-bb1f-dee8b2fa766f)
 
 - POST /commerce/categories/registration
 - GET /commerce/categories/showing
 - Description: 1st endpoint allows you to create a new category. 2nd endpoint allows you to retrieve a list of all available categories. 
 
-![supplier controller](https://github.com/xadidja03/trade-control-system/assets/116426512/97cd3833-f9c1-4384-9950-74eaaf8cd617)
+![supplier controller](https://github.com/xadidja03/trade-control-system/assets/116426512/68cae95a-f85e-470d-a20e-fe21a2b90269)
+
 
 - POST /commerce/suppliers/registration
 - GET /commerce/suppliers/showing
 - Description: 1st endpoint allows you to create a new suppliers. 2nd endpoint allows you to retrieve a list of all available suppliers.
 
-![product-controller](https://github.com/xadidja03/trade-control-system/assets/116426512/eab569ad-f743-4032-875f-9ed1e6bb1a9f)
+![product-controller](https://github.com/xadidja03/trade-control-system/assets/116426512/4d12412f-10a6-4845-a940-e0dd1c50175f)
 
 
 - POST /commerce/products/registration <br>**allows you to create a new products.**
@@ -53,7 +54,7 @@ The application provides a comprehensive set of features to facilitate effective
 
 # **The run of the building jar file**
 
-![jar build](https://github.com/xadidja03/trade-control-system/assets/116426512/daeaf99a-8d10-43db-b0a7-2fe9a37933fb)
+![jar build](https://github.com/xadidja03/trade-control-system/assets/116426512/0dd97147-f86e-46ab-ad4e-94b5b612fa21)
 
 Feel free to explore the codebase, contribute, or fork the project if you find it beneficial. If you have any inquiries, suggestions, or collaboration opportunities, please don't hesitate to get in touch. Thank you for exploring the Commerce Platform repository!
 
