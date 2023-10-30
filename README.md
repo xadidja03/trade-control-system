@@ -1,6 +1,6 @@
 # trade-control-system-security
 
-![structure](https://github.com/xadidja03/express-bank/assets/116426512/36d4a16d-691f-4893-8912-b7ad460b9264)
+![structure](https://github.com/xadidja03/trade-control-system-security/assets/116426512/1230454b-a1bc-44c9-9ed9-5da14a4e314a)
 
 
 **Welcome to the my application✨**
